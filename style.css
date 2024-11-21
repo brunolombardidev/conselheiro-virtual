@@ -111,6 +111,7 @@ main {
 
 .card {
     padding: 20px;
+    width: 100%;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -129,7 +130,7 @@ main {
 }
 
 .card a {
-    text-decoration: underline;
+    text-decoration: none; /* Remove sublinhado */
     color: white; /* Define a cor do texto como branco */
     font-weight: bold; /* Destaca o texto */
     line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
@@ -147,6 +148,7 @@ main {
     transform: scale(1.03); /* Efeito de hover */
 }
 
+/* Cards Conhecer e Campanhas lado a lado */
 .card-row {
     display: flex;
     gap: 15px;
@@ -164,15 +166,13 @@ main {
 }
 
 .card-conhecer {
-    margin: 0 auto;
-    width: 48vw;
+    width: 48%; /* Ajuste da largura para 48% para garantir que fiquem lado a lado */
     background-image: url('./assets/conhecer.jpg');
     background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
 }
 
 .card-campanhas {
-    margin: 0 auto;
-    width: 48vw;
+    width: 48%; /* Ajuste da largura para 48% para garantir que fiquem lado a lado */
     background-image: url('./assets/campanhas.jpg');
     background-color: rgba(0, 0, 0, 0.7); /* Preto com 70% de opacidade */
 }
@@ -181,4 +181,31 @@ main {
     min-height: 200px; /* Altura maior para o card Denunciar */
     background-image: url('./assets/denunciar.jpg');
     background-color: rgba(255, 0, 0, 0.7); /* Vermelho com 70% de opacidade */
+}
+
+/* Estilo para telas pequenas */
+@media (max-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr; /* Alinha todos os cards em uma única coluna */
+        gap: 10px; /* Reduz o espaçamento entre os cards */
+    }
+
+    .card-row {
+        display: flex; /* Mantém os cards lado a lado */
+        flex-wrap: wrap; /* Permite quebra de linha, se necessário */
+        justify-content: space-between;
+    }
+
+    .card {
+
+    }
+
+    .card-conhecer, 
+    .card-campanhas {
+        width: 48%; /* Mantém as duas divs com 48% de largura lado a lado */
+    }
+
+    .card-denunciar {
+        min-height: 150px; /* Reduz altura mínima para economizar espaço */
+    }
 }
