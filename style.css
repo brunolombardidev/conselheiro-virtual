@@ -111,7 +111,6 @@ main {
 
 .card {
     padding: 20px;
-    width: 100%;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -194,10 +193,6 @@ main {
         display: flex; /* Mantém os cards lado a lado */
         flex-wrap: wrap; /* Permite quebra de linha, se necessário */
         justify-content: space-between;
-    }
-
-    .card {
-
     }
 
     .card-conhecer, 
