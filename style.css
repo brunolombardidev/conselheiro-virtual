@@ -38,7 +38,7 @@ header {
     top: 0;
     width: 250px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: orange; /* Cor laranja para o menu */
     color: #fff;
     padding: 20px;
     transition: right 0.3s;
@@ -100,6 +100,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-blend-mode: overlay; /* Combina a cor de fundo com a imagem */
 }
 
 .card span {
@@ -121,23 +122,28 @@ main {
 /* Backgrounds for each card */
 .card-cidades {
     background-image: url('./assets/cidades.jpg');
+    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de opacidade */
 }
 
 .card-interagir {
     background-image: url('./assets/interagir.jpg');
+    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de opacidade */
 }
 
 .card-conhecer {
     background-image: url('./assets/conhecer.jpg');
+    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de opacidade */
 }
 
 .card-campanhas {
     background-image: url('./assets/campanhas.jpg');
+    background-color: rgba(0, 0, 0, 0.7); /* Cor preta com 70% de opacidade */
 }
 
 .card-denunciar {
     min-height: 150px;
     background-image: url('./assets/denunciar.jpg');
+    background-color: rgba(255, 0, 0, 0.7); /* Cor vermelha com 70% de opacidade */
     vertical-align: middle;
 }
 
