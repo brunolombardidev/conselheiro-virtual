@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conselheiro Tutelar Virtual</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./assets/CTVLogotipoH.png" alt="Conselheiro Tutelar Virtual"> <!-- Altere para seu logo -->
+            </div>
+            <div class="hamburger" id="hamburger-menu">
+                &#9776; <!-- Ícone do menu hamburger -->
+            </div>
+        </div>
+    </header>
+    
+    <nav id="sidebar" class="sidebar">
+        <div class="close-btn" id="close-btn">&times;</div> <!-- Botão de fechamento -->
+        <ul>
+            <li><a href="#">Cidades</a></li>
+            <li><a href="#">Conhecer</a></li>
+            <li><a href="#">Campanhas</a></li>
+            <li><a href="#">Interagir</a></li>
+            <li><a href="#">Denunciar!</a></li>
+        </ul>
+        <div class="extra-links">
+            <a href="#">Visitar Website</a>
+            <a href="#">Acesso Profissional</a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="overlay"></div> <!-- Overlay para detectar clique fora -->
+
+    <main>
+        <section class="content-container">
+            <div class="card card-cidades">CIDADES<br><span>Descubra as cidades participantes.</span></div>
+            <div class="card card-interagir">INTERAGIR<br><span>Opções sadias de interação.</span></div>
+            
+            <div class="card-row">
+                <div class="card card-conhecer">CONHECER<br><span>Conheça mais sobre o E.C.A.</span></div>
+                <div class="card card-campanhas">CAMPANHAS<br><span>Campanhas da sua cidade.</span></div>
+            </div>
+
+            <div class="card card-denunciar">DENUNCIAR!<br><span>Faça denúncias anônimas.</span></div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
