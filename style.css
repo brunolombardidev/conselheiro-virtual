@@ -197,7 +197,7 @@ main {
 
     .card-conhecer, 
     .card-campanhas {
-        width: 48%; /* Mantém as duas divs com 48% de largura lado a lado */
+        width: 47%; /* Mantém as duas divs com 48% de largura lado a lado */
     }
 
     .card-denunciar {
